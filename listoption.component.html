@@ -1,0 +1,192 @@
+<div class="my-container">
+	<table>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<label> First Name</label>
+					</tr>
+					<tr>
+						<input type="text" name="txtFirstName">
+					</tr>
+
+				</table>
+			</td>
+
+			<td>
+				<table>
+					<tr>
+						<label> Surname</label>
+					</tr>
+					<tr>
+						<input type="text" name="txtSurName">
+					</tr>
+
+				</table>
+			</td>
+
+			<td>
+				<table>
+					<tr>
+						<label> Mobile</label>
+					</tr>
+					<tr>
+						<input type="text" name="txtMobile">
+					</tr>
+
+				</table>
+			</td>
+
+			<td>
+				<table>
+					<tr>
+						<label> E-mail</label>
+					</tr>
+					<tr>
+						<input type="text" name="txtEmail">
+					</tr>
+
+				</table>
+			</td>
+
+
+
+
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td width="30%"><label> Make </label>
+				<table border="1">
+					<tr>
+						<label><input type="radio" name="make" value="Toyota"
+							(click)="setradio('Toyota')" ngModel />Toyota</label>
+					</tr>
+					<tr>
+						<label><input type="radio" name="make" value="Mazda"
+							(click)="setradio('Mazda')" ngModel />Mazda</label>
+					</tr>
+
+					<tr>
+						<label><input type="radio" name="make" value="Holden"
+							(click)="setradio('Holden')" ngModel />Holden</label>
+					</tr>
+
+
+				</table></td>
+
+
+
+			<div *ngIf="isSelected('Toyota')">
+				<td width="30%"><label> Model</label>
+					<table border="1">
+						<tr>
+							<label><input type="radio" name="model1" value="Corolla" />Corolla</label>
+						</tr>
+						<tr>
+							<label><input type="radio" name="model1" value="Camry" />Camry</label>
+						</tr>
+
+						<tr>
+							<label><input type="radio" name="model1" value="Hilux" />Hilux</label>
+						</tr>
+
+
+					</table></td>
+
+
+			</div>
+
+			<div *ngIf="isSelected('Mazda')">
+				<td width="30%"><label> Model</label>
+					<table border="1">
+						<tr>
+							<label><input type="radio" name="model2" value="Mazda-3" />Mazda-3</label>
+						</tr>
+						<tr>
+							<label><input type="radio" name="model2" value="CX-5" />CX-5</label>
+						</tr>
+
+						<tr>
+							<label><input type="radio" name="model2" value="Mazda-2" />Mazda-2</label>
+						</tr>
+
+
+					</table></td>
+
+
+			</div>
+
+			<div *ngIf="isSelected('Holden')">
+				<td width="30%"><label> Model</label>
+					<table border="1">
+						<tr>
+							<label><input type="radio" name="model3"
+								value="Commodore" />Commodore</label>
+						</tr>
+						<tr>
+							<label><input type="radio" name="model3" value="Astra" />Astra</label>
+						</tr>
+
+						<tr>
+							<label><input type="radio" name="model3" value="Equinox" />Equinox</label>
+						</tr>
+
+
+					</table></td>
+
+
+			</div>
+
+
+
+
+
+			<td width="30%"><label> Year</label>
+				<table border="1">
+					<tr>
+						<label><input type="radio" name="year" id="q3-y"
+							value="2015" />2015</label>
+
+					</tr>
+					<tr>
+						<label><input type="radio" name="year" value="2016" />2016</label>
+					</tr>
+
+					<tr>
+						<label><input type="radio" name="year" value="2017" />2017</label>
+					</tr>
+
+
+				</table></td>
+
+			<td width="40%"><label> Insurance Type</label>
+				<table border="1">
+					<tr>
+						<label for="q3-y"><input type="radio" name="q3" id="q3-y"
+							value="yes" />Comprehensive</label>
+				</table></td>
+
+
+
+
+
+		</tr>
+
+		<tr>
+			<td>
+				<button type="button" class="flash-button">Indicate price</button>
+			</td>
+			<td><label>Price</label> <input type="text" name="txtPrice">
+			</td>
+			<td><label>Tokens</label> <input type="text" name="txtTokens">
+			</td>
+
+
+
+			<td></td>
+
+		</tr>
+
+	</table>
+</div>

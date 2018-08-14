@@ -1,0 +1,33 @@
+.my-container{
+    background-color: SkyBlue;
+ }
+ 
+ .flash-button{
+	background:green;
+	padding:5px 10px;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	
+}
+
+
+/*.wiggle-button:hover {
+    height: 3em;
+    width: 20em;
+    background: #007aff;
+    border-radius: 5px;
+    color: white;
+}*/
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
